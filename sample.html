@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #22272E;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        form {
+            width: 400px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        h2 {
+            color: #1B6DC6;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        select, input, textarea {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #1B6DC6;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 50%;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center-container {
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Power Sizer</h2>
+
+        <label for="customerName">Customer Name:</label>
+        <select id="customerName" name="customerName">
+            <option value="customer1">Customer 1</option>
+            <option value="customer2">Customer 2</option>
+        </select>
+
+        <label for="voltageInput">Data Center Voltage Input:</label>
+        <select id="voltageInput" name="voltageInput">
+            <option value="voltage1">Voltage 1</option>
+            <option value="voltage2">Voltage 2</option>
+        </select>
+
+        <h2>NX Chassis</h2>
+        <label for="rack">Rack:</label>
+        <select id="rack" name="rack">
+            <option value="rack1">Rack 1</option>
+            <option value="rack2">Rack 2</option>
+        </select>
+
+        <label for="chassis">Chassis:</label>
+        <select id="chassis" name="chassis">
+            <option value="chassis1">Chassis 1</option>
+            <option value="chassis2">Chassis 2</option>
+        </select>
+
+        <label for="cpu">CPU:</label>
+        <select id="cpu" name="cpu">
+            <option value="cpu1">CPU 1</option>
+            <option value="cpu2">CPU 2</option>
+        </select>
+
+        <label for="media">Media:</label>
+        <select id="media" name="media">
+            <option value="media1">Media 1</option>
+            <option value="media2">Media 2</option>
+        </select>
+
+        <label for="gpu">GPU:</label>
+        <input type="text" id="gpu" name="gpu">
+
+        <label for="power">Power:</label>
+        <input type="text" id="power" name="power">
+
+        <h2>Design Constraints</h2>
+        <label for="maxRacks">Maximum Available Racks:</label>
+        <select id="maxRacks" name="maxRacks">
+            <option value="10">10 Racks</option>
+            <option value="20">20 Racks</option>
+        </select>
+
+        <label for="maxKwPerRack">Maximum kW Per Rack:</label>
+        <select id="maxKwPerRack" name="maxKwPerRack">
+            <option value="5">5 kW</option>
+            <option value="10">10 kW</option>
+        </select>
+
+        <h2>Extra Information</h2>
+        <label for="note">Note:</label>
+        <textarea id="note" name="note" rows="4"></textarea>
+
+        <!-- <button id="printButton">Print</button> -->
+        <div class="center-container">
+            <button id="centeredButton">Print</button>
+        </div>
+    </form>
+
+</body>
+</html>
